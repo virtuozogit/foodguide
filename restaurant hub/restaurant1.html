@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodguide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="resto1.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- nav bar -->
+            <div class="col-md-8 mx-auto ">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="/review/food hub/foodhub.html">Foodguide</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/review/profile/profile-1.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/review/sign in/sign-in.html">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Log out</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                              Filter
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/review/edit profile/edit-profile.html">Settings</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-8 mx-auto">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner ratio ratio-21x9 rounded">
+                  <div class="carousel-item active">
+                    <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/06/chicken-kebabs-recipe-1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/06/chicken-kebabs-recipe-1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/06/chicken-kebabs-recipe-1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card mb-1">
+                <div class="card-body">
+                  <p class="fs-2">Kebab Place</p>
+                </div>
+              </div>
+              <div class="d-md-flex">
+                <div class="card flex-lg-grow-1 mb-1">
+                  <div class="card-body">
+                    <p class="fs-3">Ratings</p>
+                    <p class="fs-4">⭐⭐⭐</p>
+                    <p class="fs-5">1 reviews</p>
+                  </div>
+                  <div class="card-body mb-1">
+                    <p class="fs-3">About</p>
+                    <p class="fs-5">This is a restaurant based in Quezon City. We serve Kebab and Shawarma. We have a really good sauce and rice</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comments / Reviews -->
+              <div class="d-md-flex">
+                <div class="card flex-lg-grow-1" style="max-width: 100vh;">
+                  <div class="card-body">
+                    <p class="fs-3">Review</p>
+                    <a type="button" class="btn btn-primary mb-2" href="/review/create-review/create-review-1.html">Add a review</a>
+
+                    <!-- review 1 -->
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <p>Recommended</p>
+
+                        <!-- images -->
+                        <div class="col-12 col-md-6">
+                          <div class="ratio ratio-4x3 mb-3">
+                            <img src="https://www.ajinomotofoodbizpartner.com.my/wp-content/uploads/2023/08/Chicken-Kebab-Wrap-thumbnail-03.jpg" class="img-fluid object-fit-cover" alt="...">
+                          </div>
+                        </div>
+                        
+                        <a href="/review/profile/profile-1.html" class="nav-link"><p class="text-secondary fw-bolder">gerod2020</p></a>
+                        <p class="text-truncate" id="com-1">Delicous food! Really a cut above, you are warmly welcomed as soon as you walk in. If the menu (which is extensive) is a little intimidating just ask them for help and/or recommendations and the waitstaff will help you figure it all out. Dim Sum are exceptional, service impeccable, and everything else you eat will be just as good. I dined here twice on my last visit to Manila, it was that good. Highly recommended.</p>
+                        <button type="button" class="btn btn-primary mb-2" id="btn-com-1" data-bs-toggle="button">See more</button>
+                        <p class="fw-lighter"><button type="button" class="btn btn-primary m-1 btn-sm" id="btn-com-1">👍</button> 1 person found this helpful</p>
+                        <a type="button" class="btn btn-primary mb-2" href="/review/owner-response/owner-response.html">Respond</a>
+
+                        <!-- Owners response -->
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Owner's Response
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                We are glad to know that. Thank you for eating at out restaurant!
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="">Next</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Filter Off Canvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Ratings
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <form action="">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            ⭐ & up
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            ⭐⭐ & up
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            ⭐⭐⭐ & up
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
